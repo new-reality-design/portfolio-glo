@@ -1,0 +1,557 @@
+/*General styles*/
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-color: #20202D;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 945px;
+}
+
+.section {
+  padding: 64px;
+  padding: 92px;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 84px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+/*Section 1*/
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 155px;
+  background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+.hero-header {
+  margin-bottom: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link {
+  margin-left: 20px;
+}
+
+.social-link:first-child {
+  margin-left: 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-subtitle {
+  margin-bottom: 14px;
+  /*display: inline-block;*/
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFBB01;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+}
+
+.hero-description {
+  margin-bottom: 38px;
+  max-width: 420px;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+}
+
+.button {
+  padding: 24px 48px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 14px;
+  background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
+  box-shadow: 0px 4px 0px #B68500;
+  border: none;
+  border-radius: 5px 5px 10px 10px;
+}
+
+/*Disabling default border in Chrome*/
+button:active,
+button:focus {
+  outline: none;
+}
+
+.hero-avatar {
+  background-image: url(../img/avatar.jpg);
+  background-repeat: no-repeat;
+  background-position: top left -62px;
+  width: 389px;
+  height: 389px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 11px solid #fff;
+}
+
+/*Section 2 - Features*/
+
+.features {
+  background-color: #000000;
+}
+
+.features-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features-item {
+  flex-basis: 30%;
+  margin-bottom: 63px;
+}
+
+.features-image {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.features-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.features-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/*Section 3- Projects*/
+
+.projects {
+  /*0-180 = turn the gradient around*/
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+.project-slide {
+  display: flex;
+  align-items: start;
+  /*Ensures the blocks are aligned to the top line*/
+  justify-content: space-between;
+}
+
+.project-text {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-title {
+  margin: 0;
+  margin-bottom: 41px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  flex-basis: 100%;
+}
+
+.project-time,
+.project-cost {
+  flex-basis: 50%;
+  margin-bottom: 44px;
+}
+
+.project-time,
+.project-cost,
+.project-feedback {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-subtitle {
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.project-paragraph {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.project-image {
+  padding-top: 5px;
+}
+
+.project-icon {
+  margin-right: 16px;
+}
+
+.projects-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.projects-bullet {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFBB01;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.projects-bullet-active {
+  background-color: #FFBB01;
+}
+
+
+/*Section 4- Contacts*/
+
+.contacts-form {
+  background: #FFFFFF;
+  box-shadow: -5px 5px 0px #FFC41D;
+  border-radius: 5px;
+  max-width: 380px;
+  padding: 40px 48px 49px;
+}
+
+.form-title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+}
+
+.input {
+  background: #f8f8f8;
+  box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+  border: none;
+  padding: 18px 20px;
+  padding-left: 50px;
+  width: 99%;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.input-name {
+  margin-bottom: 17px;
+  background-image: url(../img/user-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.input-phone {
+  margin-bottom: 17px;
+  background-image: url(../img/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.form-button {
+  max-width: 100%;
+}
+
+.contacts-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-text {
+  flex-basis: 50%;
+}
+
+.contacts-data {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+
+.contacts-phone,
+.contacts-mail {
+  flex-basis: 50%;
+  margin-bottom: 53px;
+}
+
+.contacts-social {
+  flex-basis: 100%;
+}
+
+.contacts-link {
+  /*Надо добавить line-height, из-за количества символов 3 ссылки не помещаются на одну строку- и склеиваются.*/
+  line-height: 30px;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 37px;
+}
+
+.contacts-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-policy {
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #a5a5a5;
+  display: block;
+  margin-top: 72px;
+}
+
+/*Responsive*/
+
+@media (max-width: 1100px) {
+  .hero-avatar {
+    width: 300px;
+    height: 300px;
+    border-width: 8px;
+    background-position: top -30px left -115px;
+  }
+
+  .project-text {
+    margin-left: 35px;
+  }
+
+  /*.contacts-block {
+    align-items: start;
+  }
+
+  .contacts-form {
+    margin-right: 40px;
+  }*/
+
+}
+
+@media (max-width: 930px) {
+  .section-title {
+    text-align: center;
+  }
+
+  .project-slide {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin: auto;
+    margin-bottom: 46px;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .project-text {
+    margin-left: 5px;
+  }
+
+}
+
+@media (max-width: 830px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-avatar {
+    order: 0;
+    width: 300px;
+    height: 300px;
+    border-width: 8px;
+    background-position: top -30px left -115px;
+    margin-bottom: 17px;
+  }
+
+  .hero-text {
+    order: 1;
+    text-align: center;
+  }
+
+
+
+  .features-item {
+    flex-basis: 45%;
+    margin-bottom: 30px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+
+
+  .contacts-block {
+    flex-direction: column;
+  }
+
+  .contacts-form {
+    margin: auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 660px) {
+  .features-item {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .hero {
+    padding-bottom: 75px;
+  }
+
+  .section {
+    padding-top: 63px;
+    padding-left: 63px;
+  }
+
+  .social-link {
+    margin-left: 5px;
+  }
+
+  .hero-avatar {
+    width: 220px;
+    height: 220px;
+    border-width: 5px;
+    background-size: 100%;
+    background-position: top center;
+  }
+
+  .hero-header {
+    margin-bottom: 38px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 5px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .section-title {
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 60px;
+  }
+
+  .features-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .features-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-avatar {
+    width: 113px;
+    height: 113px;
+    border-width: 4px;
+  }
+
+
+  /* .project-paragraph {
+    flex-basis: 80%;
+  } */
+
+  /*
+
+        <div class="projects-slider">
+          <div class="project-slide">
+            <img src="./img/slider-images/project-img-1.png"
+              alt="Сайт строительной фирмы “Велстрой”" class="project-image">
+            <div class="project-text">
+              <h3 class="project-title">Сайт строительной фирмы “Велстрой”</h3>
+              <div class="project-time">
+                <img src="./img/time-icon.svg" alt="Сроки" class="project-icon">
+                <div class="project-description">
+                  <h4 class="project-subtitle">Сроки</h4>
+                  <p class="project-paragraph">4 рабочих дня</p>
+                </div>
+              </div>
+              <!-- /.project-time -->
+              <div class="project-cost">
+                <img src="./img/cost-icon.svg" alt="Стоимость"
+                  class="project-icon">
+                <div class="project-description">
+                  <h4 class="project-subtitle">Стоимость</h4>
+                  <p class="project-paragraph">14 000 рублей</p>
+                </div>
+              </div>
+              <!-- /.project-cost -->
+              <div class="project-feedback">
+                <img src="./img/feedback-icon.svg" alt="Отзыв клиента"
+                  class="project-icon">
+                <div class="project-description">
+                  <h4 class="project-subtitle">Отзыв клиента</h4>
+                  <p class="project-paragraph">Мне понравилось работать с
+                    Ольгой, потому что она все время была на связи и предлагала
+                    свои решения, когда мы заходили в тупик с дизайном. Мне
+                    нужны были закрывающие документы для бухгалтерии, и Ольга —
+                    тот редкий фрилансер, у которого с документами все в порядке
+                  </p>
+                </div>
+              </div>
+              <!-- /.project-feedback -->
+            </div>
+          </div>
+        </div>
+
+*/
