@@ -378,6 +378,7 @@ button:focus {
   .project-image {
     margin: auto;
     margin-bottom: 46px;
+    max-width: 100%;
   }
 
   .project-title {
